@@ -51,6 +51,7 @@ export const copy = {
       languages: "IDIOMAS",
       tech: "Tecnologías y herramientas",
       focus: "Enfoque",
+      portraitAlt: "Retrato de Nicolás Martín Gulam",
     },
     ntk: {
       kicker: "NTK SOLUTIONS",
@@ -147,6 +148,7 @@ export const copy = {
       languages: "LANGUAGES",
       tech: "Tools and technologies",
       focus: "Focus",
+      portraitAlt: "Portrait of Nicolás Martín Gulam",
     },
     ntk: {
       kicker: "NTK SOLUTIONS",

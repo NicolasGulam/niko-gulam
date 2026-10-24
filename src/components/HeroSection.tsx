@@ -33,11 +33,11 @@ export function HeroSection() {
       aria-labelledby="hero-title"
       className="relative isolate flex min-h-[calc(100svh-4rem)] flex-col overflow-hidden bg-black"
     >
-      {/* Background: very faint orange diagonal bands drifting slowly.
-          Only `transform` is animated; the radial mask keeps the centre clear. */}
+      {/* Background: orange diagonal bands drifting slowly.
+          Only `transform` is animated; the radial mask keeps the lockup readable. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden [mask-image:radial-gradient(ellipse_75%_65%_at_50%_50%,transparent_0%,#000_100%)]"
+        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden [mask-image:radial-gradient(ellipse_80%_70%_at_50%_48%,transparent_18%,#000_88%)]"
       >
         <div className="bg-stripes animate-stripe-drift absolute inset-y-0 -left-[120px] right-0 will-change-transform motion-reduce:animate-none" />
       </div>

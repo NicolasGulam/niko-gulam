@@ -1,10 +1,13 @@
 "use client";
 
+import Image from "next/image";
+import { ClipReveal } from "@/components/motion/ClipReveal";
 import { DrawLine } from "@/components/motion/DrawLine";
 import { PopDot } from "@/components/motion/PopDot";
 import { Reveal } from "@/components/motion/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { getAbout } from "@/data/about";
+import { site } from "@/data/site";
 import { useLocale } from "@/i18n/provider";
 
 export function AboutSection() {
@@ -29,8 +32,27 @@ export function AboutSection() {
           }
         />
 
-        <div className="mt-10 grid gap-12 sm:mt-14 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-7 lg:pr-10">
+        <div className="mt-10 grid items-start gap-10 sm:mt-14 lg:grid-cols-12 lg:gap-8">
+          <ClipReveal className="mx-auto w-full max-w-[22rem] lg:col-span-4 lg:row-span-2 lg:mx-0 lg:max-w-none">
+            <figure className="border border-line bg-black">
+              <span aria-hidden="true" className="block h-0.5 bg-orange" />
+              <div className="relative aspect-[4/5] overflow-hidden bg-surface">
+                <Image
+                  src="/about/nicolas-gulam.jpg"
+                  alt={t.about.portraitAlt}
+                  fill
+                  sizes="(min-width: 1024px) 28vw, 22rem"
+                  quality={92}
+                  className="object-cover object-[center_18%]"
+                />
+              </div>
+              <figcaption className="label-mono border-t border-line px-5 py-3.5 text-paper">
+                {site.fullName}
+              </figcaption>
+            </figure>
+          </ClipReveal>
+
+          <div className="lg:col-span-8">
             <Reveal>
               <p className="text-pretty font-display text-[clamp(1.4rem,2.6vw,2.125rem)] font-medium leading-[1.25] tracking-[-0.02em] text-paper">
                 {about.paragraphs[0]}
@@ -43,7 +65,7 @@ export function AboutSection() {
             </Reveal>
           </div>
 
-          <Reveal delay={0.15} className="lg:col-span-5">
+          <Reveal delay={0.15} className="lg:col-span-8 lg:col-start-5">
             <aside
               aria-label={t.about.tech}
               className="border border-line bg-black"

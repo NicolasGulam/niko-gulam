@@ -124,7 +124,7 @@
 }
 
 /*
-  Faint diagonal bands (hero background).
+  Diagonal construction bands (hero background).
   The period is 120px / sqrt(2) so that translating by exactly 120px on the X
   axis (see --animate-stripe-drift) shifts the pattern by one full period:
   the loop has no visible seam.
@@ -133,6 +133,6 @@
   background-image: repeating-linear-gradient(
     135deg,
     transparent 0 58px,
-    rgb(255 87 34 / 0.065) 58px 84.8528px
+    rgb(255 87 34 / 0.16) 58px 84.8528px
   );
 }
