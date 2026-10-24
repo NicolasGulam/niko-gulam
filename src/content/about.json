@@ -1,0 +1,76 @@
+{
+  "paragraphs": [
+    {
+      "es": "Me interesa resolver problemas con código y construir productos digitales donde la funcionalidad, la creatividad y la experiencia de usuario se encuentren.",
+      "en": "I like solving problems with code and building digital products where function, craft and user experience meet."
+    },
+    {
+      "es": "Mi perfil une desarrollo web, videojuegos y control de calidad: estudié videojuegos en la UAI, trabajé en QA y Unity AR en Axter y hoy, como co-fundador de NTK Solutions, construyo y mejoro sitios web y desarrollo mis propios videojuegos con Unity. Además estudio Analista Funcional en Sistemas Informáticos.",
+      "en": "My work sits at the intersection of web, games and quality: I studied game development at UAI, worked in QA and Unity AR at Axter, and today, as co-founder of NTK Solutions, I build and improve websites and develop my own games in Unity. I am also studying to become a Functional Systems Analyst."
+    }
+  ],
+  "specializations": [
+    {
+      "id": "web",
+      "index": "01",
+      "title": { "es": "DESARROLLO WEB", "en": "WEB DEVELOPMENT" },
+      "description": {
+        "es": "Sitios institucionales y de catálogo para negocios reales: estructura clara, contenido editable por el cliente y versión bilingüe cuando hace falta.",
+        "en": "Institutional and catalogue sites for real businesses: a clear structure, client-editable content, and a bilingual version when it is needed."
+      },
+      "focus": ["HTML", "CSS", "JavaScript", "PHP", "React / Next.js"]
+    },
+    {
+      "id": "game-qa",
+      "index": "02",
+      "title": {
+        "es": "VIDEOJUEGOS Y QA",
+        "en": "GAME DEVELOPMENT & QA"
+      },
+      "description": {
+        "es": "Formación universitaria en videojuegos y desarrollo con Unity y C#. En calidad, certificación en testing y experiencia en QA dentro de una empresa de software.",
+        "en": "University training in games and development with Unity and C#. In quality, a testing certification and QA experience inside a software company."
+      },
+      "focus": ["Unity", "C#", "QA Testing", "Testing de videojuegos"]
+    }
+  ],
+  "stack": [
+    {
+      "id": "web",
+      "label": { "es": "WEB", "en": "WEB" },
+      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "PHP"]
+    },
+    {
+      "id": "game",
+      "label": { "es": "VIDEOJUEGOS", "en": "GAME" },
+      "items": ["Unity", "C#", "Blender", "3ds Max"]
+    },
+    {
+      "id": "qa",
+      "label": { "es": "QA Y HERRAMIENTAS", "en": "QA & TOOLS" },
+      "items": ["QA Testing", "Jira", "Trello", "Postman", "GitHub"]
+    }
+  ],
+  "languages": [
+    {
+      "label": { "es": "Español", "en": "Spanish" },
+      "level": { "es": "Nativo", "en": "Native" }
+    },
+    {
+      "label": { "es": "Inglés", "en": "English" },
+      "level": { "es": "B2", "en": "B2" }
+    },
+    {
+      "label": { "es": "Portugués", "en": "Portuguese" },
+      "level": { "es": "Intermedio", "en": "Intermediate" }
+    },
+    {
+      "label": { "es": "Japonés", "en": "Japanese" },
+      "level": { "es": "Principiante", "en": "Beginner" }
+    },
+    {
+      "label": { "es": "Coreano", "en": "Korean" },
+      "level": { "es": "Principiante", "en": "Beginner" }
+    }
+  ]
+}

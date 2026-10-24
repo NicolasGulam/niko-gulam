@@ -1,0 +1,80 @@
+[
+  {
+    "id": "compass",
+    "title": "Compass Travel Solutions",
+    "kind": "web",
+    "category": { "es": "DESARROLLO WEB", "en": "WEB DEVELOPMENT" },
+    "meta": { "es": "compass.tur.ar", "en": "compass.tur.ar" },
+    "description": {
+      "es": "Sitio institucional bilingüe (ES/EN) para una agencia de viajes de Rosario. Presenta la empresa y sus servicios, y suma un panel propio para publicar novedades.",
+      "en": "Bilingual (ES/EN) institutional site for a travel agency in Rosario. It presents the company and its services, plus a custom panel to publish news."
+    },
+    "tags": ["PHP", "JavaScript", "HTML", "CSS"],
+    "image": {
+      "src": "/projects/compass.webp",
+      "alt": {
+        "es": "Captura de la portada de compass.tur.ar: título «Viajes exclusivos & Grupos Boutique» sobre una fotografía de Santorini.",
+        "en": "Homepage of compass.tur.ar: the heading “Exclusive trips & Boutique Groups” over a photograph of Santorini."
+      },
+      "width": 1440,
+      "height": 900
+    },
+    "href": "https://compass.tur.ar"
+  },
+  {
+    "id": "sanchez-hidalgo",
+    "title": "Sánchez Hidalgo Viajes",
+    "kind": "web",
+    "category": { "es": "DESARROLLO WEB", "en": "WEB DEVELOPMENT" },
+    "meta": { "es": "REDISEÑO · NTK SOLUTIONS", "en": "REDESIGN · NTK SOLUTIONS" },
+    "description": {
+      "es": "Rediseño de la web de una agencia de viajes: catálogo de viajes, buscador, lista de deseos y versión en inglés, con panel de administración propio.",
+      "en": "Redesign of a travel-agency site: trip catalogue, search, wishlist and English version, with its own admin panel."
+    },
+    "tags": ["PHP", "JavaScript", "CSS", "JSON"],
+    "image": {
+      "src": "/projects/sanchez-hidalgo.webp",
+      "alt": {
+        "es": "Captura de la versión rediseñada de Sánchez Hidalgo Viajes: portada con banner de Punta Cana desde Rosario y accesos a catálogo, cruceros, Brasil y Caribe, y Europa.",
+        "en": "Capture of the redesigned Sánchez Hidalgo Viajes site: homepage with a Punta Cana from Rosario banner and links to catalogue, cruises, Brazil and Caribbean, and Europe."
+      },
+      "width": 1440,
+      "height": 900
+    },
+    "note": {
+      "es": "REDISEÑO AÚN NO PUBLICADO",
+      "en": "REDESIGN NOT PUBLISHED YET"
+    }
+  },
+  {
+    "id": "insanity",
+    "title": "Insanity: Prison Escape",
+    "kind": "game",
+    "category": { "es": "DESARROLLO DE VIDEOJUEGOS", "en": "GAME DEVELOPMENT" },
+    "meta": { "es": "MENÚ PRINCIPAL", "en": "MAIN MENU" },
+    "description": {
+      "es": "Proyecto de videojuego centrado en una experiencia de escape de prisión, con énfasis en la programación, el gameplay y la construcción de una atmósfera inmersiva.",
+      "en": "Game project focused on a prison-escape experience, with emphasis on programming, gameplay and building an immersive atmosphere."
+    },
+    "tags": ["Unity", "C#", "URP"],
+    "image": {
+      "src": "/projects/insanity.webp",
+      "alt": {
+        "es": "Escena del menú principal de Insanity: Prison Escape: una prisión sobre un acantilado, de noche y bajo un cielo tormentoso, con un faro que gira sobre la torre. Logo del juego a la izquierda.",
+        "en": "Main-menu scene from Insanity: Prison Escape: a prison on a cliff at night under a stormy sky, with a lighthouse sweeping over the tower. Game logo on the left."
+      },
+      "width": 1600,
+      "height": 900,
+      "overlay": {
+        "src": "/projects/insanity-logo.webp",
+        "width": 900,
+        "height": 311
+      },
+      "video": "/projects/insanity-menu.mp4"
+    },
+    "note": {
+      "es": "SIN DEMO PÚBLICA AÚN",
+      "en": "NO PUBLIC DEMO YET"
+    }
+  }
+]

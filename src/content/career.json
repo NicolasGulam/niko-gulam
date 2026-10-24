@@ -1,0 +1,88 @@
+{
+  "experience": [
+    {
+      "id": "ntk",
+      "organization": "NTK Solutions",
+      "role": {
+        "es": "COFUNDADOR / WEB Y VIDEOJUEGOS",
+        "en": "CO-FOUNDER / WEB & GAME DEV"
+      },
+      "period": { "es": "EN CURSO", "en": "ONGOING" },
+      "summary": {
+        "es": "Marca bajo la que desarrollo proyectos digitales: creación y mejora de sitios web, y desarrollo de videojuegos.",
+        "en": "Brand under which I build digital work: creating and improving websites, and developing games."
+      }
+    },
+    {
+      "id": "axter",
+      "organization": "Axter Software Solutions",
+      "role": {
+        "es": "QA Y DESARROLLADOR AR CON UNITY",
+        "en": "QA & UNITY AR DEVELOPER"
+      },
+      "period": { "es": "ENE 2019 — NOV 2019", "en": "JAN 2019 — NOV 2019" },
+      "summary": {
+        "es": "Desarrollo con Unity en proyectos de realidad aumentada y tareas de control de calidad en una empresa de software.",
+        "en": "Unity development on augmented-reality projects and quality-assurance work at a software company."
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": "isei",
+      "institution": "ISEI 40 30",
+      "program": {
+        "es": "Analista Funcional en Sistemas Informáticos",
+        "en": "Functional Systems Analyst"
+      },
+      "period": { "es": "2026 — EN CURSO", "en": "2026 — ONGOING" },
+      "status": { "es": "EN CURSO", "en": "IN PROGRESS" }
+    },
+    {
+      "id": "uai-lic",
+      "institution": "Universidad Abierta Interamericana (UAI)",
+      "program": {
+        "es": "Licenciatura en Producción de Simuladores y Videojuegos",
+        "en": "Bachelor's in Simulator and Video Game Production"
+      },
+      "period": { "es": "2024 — 2025", "en": "2024 — 2025" },
+      "status": {
+        "es": "CURSADA FINALIZADA · TESIS PENDIENTE",
+        "en": "COURSEWORK COMPLETE · THESIS PENDING"
+      }
+    },
+    {
+      "id": "uai-tec",
+      "institution": "Universidad Abierta Interamericana (UAI)",
+      "program": {
+        "es": "Tecnicatura Universitaria en Desarrollo de Videojuegos",
+        "en": "University Technician in Video Game Development"
+      },
+      "period": { "es": "2017 — 2022", "en": "2017 — 2022" },
+      "status": { "es": "COMPLETA", "en": "COMPLETED" }
+    }
+  ],
+  "certifications": [
+    {
+      "id": "radium",
+      "name": "QA Specialization",
+      "issuer": "Radium Rocket",
+      "year": "2022"
+    },
+    {
+      "id": "udemy",
+      "name": "Testing de Videojuegos: La Guía Definitiva",
+      "issuer": "Udemy"
+    },
+    {
+      "id": "coderhouse",
+      "name": "Marketing Digital: Community Manager",
+      "issuer": "Coderhouse"
+    },
+    {
+      "id": "cambridge",
+      "name": "Cambridge English First",
+      "issuer": "Cambridge"
+    }
+  ]
+}

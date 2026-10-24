@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   NK nikogulam — design tokens
+   ------------------------------------------------------------------ */
+@theme inline {
+  --color-orange: #ff5722;
+  --color-carbon: #101112;
+  --color-surface: #191a1c;
+  --color-line: #292b2f;
+  --color-muted: #969ba3;
+  --color-paper: #f5f5f5;
+
+  --font-sans: var(--font-archivo), "Segoe UI", system-ui, sans-serif;
+  --font-display: var(--font-archivo), "Segoe UI", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular",
+    Menlo, Consolas, monospace;
+
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Hero background drift: moves exactly one tile (120px) so it loops without a seam. */
+  --animate-stripe-drift: stripe-drift 36s linear infinite;
+  @keyframes stripe-drift {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(120px, 0, 0);
+    }
+  }
+
+  /* Scroll cue on the hero. Disabled via `motion-reduce:animate-none`. */
+  --animate-cue: cue 1.8s ease-in-out infinite;
+  @keyframes cue {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(6px);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    background: #000;
+    color-scheme: dark;
+    /* Sticky navbar is 4rem tall: keep anchored headings visible. */
+    scroll-padding-top: 4rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background: var(--color-carbon);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-orange);
+    color: #000;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 3px;
+  }
+}
+
+/* Reduced motion: keep fades, drop mask/clip reveals. */
+@media (prefers-reduced-motion: reduce) {
+  .mo-clip {
+    clip-path: none !important;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Utilities
+   ------------------------------------------------------------------ */
+@utility shell {
+  width: 100%;
+  max-width: 92rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+@utility section-y {
+  padding-block: clamp(4.5rem, 10vw, 9rem);
+}
+
+/* Archivo width axis. */
+@utility font-wide {
+  font-stretch: 125%;
+}
+
+@utility font-semiwide {
+  font-stretch: 112%;
+}
+
+@utility font-narrow {
+  font-stretch: 70%;
+}
+
+/* Mono label used for metadata. */
+@utility label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/*
+  Faint diagonal bands (hero background).
+  The period is 120px / sqrt(2) so that translating by exactly 120px on the X
+  axis (see --animate-stripe-drift) shifts the pattern by one full period:
+  the loop has no visible seam.
+*/
+@utility bg-stripes {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 58px,
+    rgb(255 87 34 / 0.065) 58px 84.8528px
+  );
+}
